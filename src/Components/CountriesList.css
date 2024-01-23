@@ -1,0 +1,67 @@
+#root {
+  --primary-background: #eee
+}
+
+
+.countriesList {
+  max-width: 1200px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 5vw;
+  padding: 5px;
+  margin: auto;
+}
+
+.countryCard {
+  border-radius: 4px;
+  margin-top: 25px;
+  width: 300px;
+  min-height: 200px;
+  max-height: 450px;  
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+  border: 1px solid rgb(0,0,0,0.2);;
+  box-shadow: 1px 5px rgb(0,0,0,0.1);
+  overflow: hidden;
+  transition: all ease-in-out 0.2s;
+}
+
+.countryCard:hover {
+  box-shadow: 2px 7px rgb(0,0,0,0.2);
+  transform: scale(1.01);
+}
+
+.flag {
+  max-width: 100%;
+  max-height: 60%;
+  align-self: center;
+}
+
+.details {
+  width: 100%;
+  padding: 5%;
+  padding-top: 0%;
+  text-align: left;
+}
+
+.name {
+  align-self: center;
+}
+
+.detail {
+  font-size: 1.25rem;
+  align-self: flex-start;
+  font-weight: bold;
+  padding: 5px;
+}
+
+.val {
+  font-weight: lighter;
+}
