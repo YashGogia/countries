@@ -65,3 +65,9 @@
 .val {
   font-weight: lighter;
 }
+
+@media (max-width: 1050px) {
+  .countriesList {
+    justify-content: center;
+  }
+}
