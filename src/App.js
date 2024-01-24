@@ -1,6 +1,7 @@
 import './App.css';
 import { CountriesList } from './Components/CountriesList';
-
+import { Route, Routes } from 'react-router-dom';
+import { Country } from './Components/country/Country';
 function App() {
   return (
     <div className="App">
@@ -11,7 +12,10 @@ function App() {
           </h1>
         </div>
       </header>
-      <CountriesList />
+      <Routes>
+        <Route path='/:countryName' element={<Country />} />
+        <Route path="/" element={<CountriesList />} />
+      </Routes>
     </div>
   );
 }

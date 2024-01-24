@@ -8,9 +8,9 @@ export function SkeletonCard() {
       <SkeletonElement type={"countryCard"}>
         <SkeletonElement type={"img"} />
         <div className='details'>
-          <SkeletonElement key={1} type={'name'} />
+          <SkeletonElement type={'name'} />
           {
-            Array.from({ length: 3 }).map((_, idx) => <SkeletonElement key={2} type={'detail'} />)
+            Array.from({ length: 3 }).map((_, idx) => <SkeletonElement key={idx} type={'detail'} />)
           }
         </div>
       </SkeletonElement>

@@ -2,8 +2,8 @@ import { useEffect, useState } from 'react'
 import "./CountriesList.css"
 import { CountryCard } from './CountryCard'
 import { SkeletonCard } from './skeletons/SkeletonCard'
-
-const API_URL = "https://restcountries.com/v3.1/all?fields=name,flags,population,region,capital"
+import { BASE_API_URL } from '../Utils/Constants'
+const API_URL = `${BASE_API_URL}/all?fields=name,flags,population,region,capital`
 
 export function CountriesList() {
 
@@ -13,7 +13,7 @@ export function CountriesList() {
       fetch(API_URL)
         .then((data) => data.json())
         .then((result) => setCountriesData(result))
-    }, 5000)
+    }, 1000)
   }, [])
 
 
