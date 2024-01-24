@@ -16,5 +16,6 @@ Rest Countries API
   - [x] Integrate react-router
   - [x] Individual routes for each country
   - [x] Add a Country component for each route
+- [ ] Search
 - [ ] React Context and dark theme
 - [ ] Integrate Reach Query

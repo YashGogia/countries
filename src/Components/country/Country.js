@@ -43,7 +43,7 @@ export const Country = () => {
          .then((res) => {
             setCountryDetails(res[0])
          })
-   }, [])
+   }, [countryName])
 
    let { capital, region, subregion, population, currencies = [], languages = [], tld } = countryDetails;
    population = population?.toLocaleString()
